@@ -1,0 +1,35 @@
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <title>Modelo Preditivo | LET</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/app.js" defer></script>
+      </head>
+      <body class="up">
+        <h1 class="text">Life Edge Technologies</h1>
+        <div class="container2">
+          <div class="container3">
+            <h2 class="env">Envio das Imagens</h2>
+          </div>
+          <form action="#" method="post" enctype="multipart/form-data">
+              <label class="botao" for="file-upload">Selecionar Arquivo</label>
+              <input type="file" id="file-upload" name="file-upload" accept=".pdf,.doc,.docx,.txt">
+              <div class="file-name" id="file-name"></div>
+              <div class="container4">
+                <button class="botao1" type="submit">Enviar</button>
+              </div>
+          </form>
+        </div>
+
+        <script>
+          const fileUpload = document.getElementById('file-upload');
+          const fileName = document.getElementById('file-name');
+
+          fileUpload.addEventListener('change', function () {
+              fileName.textContent = this.files[0].name;
+          });
+        </script>
+      </body>
+    </html>
