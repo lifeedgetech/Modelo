@@ -68,11 +68,11 @@ body2 {
   align-items: center;
   display: flex;
   gap: 35px;
-  padding-top: 20px;
+  padding-top: 40px;
   justify-content: flex-end;
 }
 .file-name {
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 14px;
 }
 input[type="file"] {
